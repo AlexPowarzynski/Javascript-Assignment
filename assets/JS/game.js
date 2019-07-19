@@ -9,7 +9,7 @@
      "s", "t", "u", 
      "v", "w", "x", 
      "y", "z"];
-const words = ["alex", "madison", "kimberly", "robert"];
+const words = ["blue", "flower", "boy", "girl"];
 let rightGuess = [];
 let wrongGuess = [];
 let trysLeft = 10;
@@ -17,6 +17,7 @@ let generatedUnderscores = []
 
 // Randomly picked words
 let randomWord = words[Math.floor(Math.random() * words.length)];
+console.log(randomWord);
 
 // Generate underscores based on word
 let underScoreWord = [];
@@ -35,7 +36,7 @@ document.onkeyup = function(x){
         underScoreWord[randomWord.indexOf(userGuess)] = userGuess;
         // console.log(underScoreWord);
         if(underScoreWord.join("") === randomWord) {
-            alert("You Win!");
+            alert("You Win! Refresh to play again.. you don't have too.");
         }
       
 
